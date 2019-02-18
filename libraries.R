@@ -17,7 +17,9 @@ library(tm)
 
 source("helpers/esco_api.R")
 source("helpers/esco_skills.R")
+source("helpers/ml.R")
 source("helpers/list.R")
+source("helpers/geo.R")
 source("helpers/string.R")
 
 # install.packages("permute")
