@@ -34,14 +34,6 @@ m$supply <- mapply(function(contracts, educations) {
   }
 }, m$contracts, m$educations)
 
-#jobs_final[jobs_final$related_occupation == "2",]$related_occupation <- "http://data.europa.eu/esco/occupation/9e2e6e1e-363b-4e1b-a673-7bc0f7343300; administrador de sistemas de TIC/administradora de sistemas de TIC"
-#jobs_final[jobs_final$related_occupation == "3",]$related_occupation <- "http://data.europa.eu/esco/occupation/8b6388a4-4904-471b-9331-d3b1211f5525; gestor de proyectos de TIC/gestora de proyectos de TIC"
-#jobs_final[jobs_final$related_occupation == "4",]$related_occupation <- "http://data.europa.eu/esco/occupation/9e2e6e1e-363b-4e1b-a673-7bc0f7343300; administrador de sistemas de TIC/administradora de sistemas de TIC"
-#jobs_final[jobs_final$related_occupation == "5",]$related_occupation <- "http://data.europa.eu/esco/occupation/3e7bf729-4442-4b9f-ad5e-83111963795c; técnico de TIC/técnica de TIC"
-#jobs_final[jobs_final$related_occupation == "6",]$related_occupation <- "http://data.europa.eu/esco/occupation/8c57af09-719c-42b3-be40-6ed4946236cc; administrador de bases de datos/administradora de bases de datos"
-#jobs_final[jobs_final$related_occupation == "7",]$related_occupation <- "http://data.europa.eu/esco/occupation/f2b15a0e-e65a-438a-affb-29b9d50b77d1; desarrollador de software/desarrolladora de software"
-#jobs_final[jobs_final$related_occupation == "8",]$related_occupation <- "http://data.europa.eu/esco/occupation/f2b15a0e-e65a-438a-affb-29b9d50b77d1; desarrollador de software/desarrolladora de software"
-
 # Get active occupations from dataset
 unique_occupations <- unique(c(
   as.character(unique(educations_final$related_occupation)),
